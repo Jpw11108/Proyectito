@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      jluengas
+HostName                       onchip.uis.edu.co
+ProcessIdentifier              5276
+ProcessCreationTime_UTC        1762350012
+ProcessCreationTime_Readable   Wed 05 Nov 2025 08:40:12 AM -05 -05
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /home/jluengas/tsmc10/slac/filtro_pasa_banda/data.dm.cdslck
+TimeEditLocked                 Wed 05 Nov 2025 08:49:37 AM -05 -05

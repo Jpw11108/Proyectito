@@ -1,0 +1,16 @@
+`include "constants.vams"
+`include "disciplines.vams"
+
+module filtro_pasa_alto(in, out);
+    input in;
+    output out;
+    electrical in, out;
+    parameter real Cutoff_frequency = 10k;  // Frecuencia de corte (-3 dB)
+
+    analog begin
+        // Filtro pasa-altos ideal: H(s) = s / (s + ?c)
+        V(out) <+ laplace_nd(V(in),
+                             {0, 1},                      // Numerador: s
+                             {2*`M_PI*Cutoff_frequency, 1}); // Denominador: s + ?c
+    end
+endmodule

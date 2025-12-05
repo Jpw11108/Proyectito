@@ -1,0 +1,28 @@
+
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module filtro_pasa_b(in, out);
+  input in;
+  output out;
+  electrical in, out;
+
+  // Parámetros del filtro
+  parameter real gain = 1;   // Ganancia
+  parameter real f0 = 10k;   // Frecuencia central
+
+  parameter real Q  = 2.45;     // Factor de calidad
+
+  real w0;
+
+  analog begin
+    w0 = 2 * `M_PI * f0;
+
+  
+
+    V(out) <+ laplace_nd(V(in),
+                         {0, gain*w0/Q, 0},   // Numerador
+                         {w0**2, w0/Q, 1});   // Denominador
+  end
+endmodule

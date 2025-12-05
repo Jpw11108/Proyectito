@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--Created by Custom Compiler (TM), build , on Wed Nov  5 08:52:15 2025-->
+<file-format name="stateData" version="1.0">
+ <attribute value="0" type="giBoolean" name="dcop_splitted"/>
+ <attribute value="" type="giString" name="description"/>
+ <attribute value="slac/filtro_pasa_baja_tes/config" type="dmCellView" name="design"/>
+ <attribute value="1" type="giBoolean" name="enabled"/>
+ <attribute value="0" type="giBoolean" name="enabledJobClass"/>
+ <attribute value="" type="giString" name="migratedSimulator"/>
+ <attribute value="PrimeSim_default" type="giString" name="name"/>
+ <attribute value="slac/filtro_pasa_baja_tes/PrimeSim_default" type="dmCellView" name="openaccessState"/>
+ <attribute value="PrimeSim" type="giString" name="simulator"/>
+ <comment></comment>
+ <resultsDir>~/simulation</resultsDir>
+ <enableTestbenchHistory>0</enableTestbenchHistory>
+ <integration version="1"/>
+</file-format>

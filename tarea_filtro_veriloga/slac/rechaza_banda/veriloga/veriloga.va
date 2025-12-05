@@ -1,0 +1,30 @@
+
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module filtro_rechaza_banda(in, out);
+    input in;
+    output out;
+    electrical in, out;
+
+    // Parámetros configurables
+    parameter real f0 = 10k;   // Frecuencia central de rechazo
+    parameter real Q  = 2.0;   // Factor de calidad (ancho de banda)
+    parameter real gain = 1.0; // Ganancia fuera de la banda
+
+    real w0;
+
+    analog begin
+        w0 = 2 * `M_PI * f0;
+
+        // Función de transferencia normalizada:
+        // H(s) = (s^2 + w0^2) / (s^2 + (w0/Q)*s + w0^2)
+        //
+        // => Rechazo en w0
+        // Q controla qué tan ancho o estrecho es el rechazo.
+
+        V(out) <+laplace_nd(V(in),{ w0**2,0,1},{w0**2, (w0/Q), 1});
+    end
+endmodule
+

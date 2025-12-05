@@ -1,0 +1,19 @@
+`include "constants.vams"
+`include "disciplines.vams"
+
+module filtro(in,out);
+  input in;
+  output out;
+  electrical in, out;
+
+  parameter real R = 1k;
+  parameter real C = 1n;
+
+  analog begin
+    // Corriente a través de la resistencia entre vin y vout
+    I(in, out) <+ V(in, out) / R;
+    // Corriente del condensador entre vout y tierra
+    I(out) <+ ddt(C * V(out));
+  end
+endmodule
+

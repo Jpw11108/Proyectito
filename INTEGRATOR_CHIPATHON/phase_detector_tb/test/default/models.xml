@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--Created by Custom Compiler (TM), build , on Tue Dec  9 17:45:40 2025-->
+<file-format version="1.0" name="stateCategory">
+ <object version="1" type="saModelSetup" name="models">
+  <attribute value="1" type="giBoolean" name="includeGlobal"/>
+  <attribute value="/home/nvelazco/workspace28/models/hspice" type="giString" name="includePath"/>
+  <collection name="modelFiles">
+   <object version="1" type="saModelFile" name="modelFiles">
+    <attribute value="1" type="giBoolean" name="enabled"/>
+    <attribute value="crn28ull_1d8_elk_v1d8_2p3_shrink0d9_embedded_usage.l" type="giString" name="filename"/>
+    <attribute value="TTMacro_MOS_MOSCAP" type="giString" name="section"/>
+   </object>
+  </collection>
+  <collection name="modelGroupDefs"/>
+  <collection name="modelGroups"/>
+ </object>
+</file-format>

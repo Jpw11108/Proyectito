@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--Created by Custom Compiler (TM), build , on Tue Dec  9 17:45:40 2025-->
+<file-format version="1.0" name="stateData">
+ <attribute value="0" type="giBoolean" name="dcop_splitted"/>
+ <attribute value="" type="giString" name="description"/>
+ <attribute value="ROI_FILTER/phase_detector_tb/schematic" type="dmCellView" name="design"/>
+ <attribute value="1" type="giBoolean" name="enabled"/>
+ <attribute value="0" type="giBoolean" name="enabledJobClass"/>
+ <attribute value="" type="giString" name="migratedSimulator"/>
+ <attribute value="default" type="giString" name="name"/>
+ <attribute value="//" type="dmCellView" name="openaccessState"/>
+ <attribute value="PrimeSim" type="giString" name="simulator"/>
+ <comment>Testbench of 'test' test suite.</comment>
+ <integration version="1"/>
+</file-format>

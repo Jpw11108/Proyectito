@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--Created by Custom Compiler (TM), build , on Tue Dec  9 21:24:14 2025-->
+<file-format name="stateData" version="1.0">
+ <attribute value="0" name="dcop_splitted" type="giBoolean"/>
+ <attribute value="" name="description" type="giString"/>
+ <attribute value="ROI_FILTER/ring_VCO_tb/schematic" name="design" type="dmCellView"/>
+ <attribute value="1" name="enabled" type="giBoolean"/>
+ <attribute value="0" name="enabledJobClass" type="giBoolean"/>
+ <attribute value="" name="migratedSimulator" type="giString"/>
+ <attribute value="TRAN" name="name" type="giString"/>
+ <attribute value="//" name="openaccessState" type="dmCellView"/>
+ <attribute value="PrimeSim" name="simulator" type="giString"/>
+ <comment>Testbench of 'NEW_TEST' test suite.</comment>
+ <integration version="1"/>
+</file-format>
